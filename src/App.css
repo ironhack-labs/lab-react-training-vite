@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  margin: 5px;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
 }
 
 .App-logo {
@@ -27,6 +30,138 @@
 .App-link {
   color: #61dafb;
 }
+
+.idCard{
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.idCard-info{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.idCard-info p{
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.text-box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  margin: 10px 0px;
+  padding: 5px;
+  height: 30px;
+}
+
+.box-color{
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 85px;
+  margin-bottom: 5px;
+}
+
+.credit-card{
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.credit-card-type{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+}
+.credit-card-number{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 20px 0px;  
+}
+.credit-card-date-bank{
+  margin: 0px;
+}
+
+.credit-card-date-bank span{
+  margin-left: 20px;
+}
+
+.credit-card-owner{
+  margin: 0px;
+}
+
+.rate-stars p{
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.driver-card{
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 120px;
+}
+
+.driver-card-img{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px;
+
+}
+
+.driver-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.driver-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.driver-info-name{
+  font-size: 24px;
+  margin: 0px;
+}
+
+.driver-info-rating{
+  font-size: 32px;
+  margin: 0px;
+}
+
+.driver-info-car-info{
+  font-size: 16px;
+  margin: 0px;
+}
+
 
 @keyframes App-logo-spin {
   from {
