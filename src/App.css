@@ -35,4 +35,80 @@
   to {
     transform: rotate(360deg);
   }
+  
+}
+
+.card1 {
+  background-color: #11aa99;
+  color: white;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  margin-right: 15px;
+  
+  
+}
+
+.card2 {
+  background-color: #eeeeee;
+  color: #222222;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  margin-right: 15px;
+  
+}
+
+.card3 {
+  background-color: #ddbb55;
+  color: white;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  
+}
+
+.creditCard {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  
+  
+}
+
+.number {
+  margin-left: 50px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.driverCard {
+  background-color: #4d6089;
+  color: white;
+  max-width: 700px;
+  border-radius: 40px;
+  max-height: 157px;
+  
+}
+
+.imgDriver {
+  width: 80px;
+  border-radius: 50px;
+  margin-left: 150px;
+  
+}
+
+.imgDriver {
+  display: flex;
 }
