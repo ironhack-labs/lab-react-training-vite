@@ -1,0 +1,8 @@
+.div-random {
+    border: 2px solid red;
+    background-color: rgba(30, 29, 29, 0.986);
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: left;
+}
