@@ -18,7 +18,7 @@ function Greetings (props) {
             greeting = "Bonjour";
             break;
         default:
-            greeting = "Sorry, I dont know your language";
+            greeting = "Sorry, I don't know your language";
     }
 
     return (
