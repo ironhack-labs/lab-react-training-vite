@@ -1,0 +1,44 @@
+.credit-card {
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-logo {
+    width: 60px;
+    margin-bottom: 10px;
+    margin-left: 220px; 
+  }
+  
+  .card-number {
+    font-size: 30px;
+  }
+  
+  .card-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .info-label {
+    font-weight: bold;
+  }
+  
+  .info-value {
+    font-style: italic;
+  }
+  
+  .credit-card-container {
+    display: flex;
+    margin: 20px;
+}
