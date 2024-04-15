@@ -1,0 +1,31 @@
+.div-clickable-container {
+    display: flex;
+    justify-content: center;
+}
+
+.div-clickable-picture {
+    position: relative;
+    width: 200px;
+    height: auto;
+}
+
+.picture {
+    width: 100%;
+    height: auto;
+}
+
+.glasses {
+ width: 120px;
+ position: absolute;
+ top: 40px;
+ left: 30px;
+ transform: rotate(5deg);
+}
+
+.picture:hover {
+    cursor: pointer;
+}
+
+.glasses:hover {
+    cursor: pointer;
+}

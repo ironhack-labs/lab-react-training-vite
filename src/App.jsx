@@ -1,11 +1,19 @@
 import "./App.css";
-import BoxColor from "./components/boxColor/BoxColor";
-import CreditCard from "./components/creditCard/CreditCard";
-import DriverCard from "./components/driverCard/DriverCard";
+import BoxColor from "./components/box-color/BoxColor";
+import Carousel from "./components/carousel/Carousel";
+import ClickablePicture from "./components/clickable-picture/ClickablePicture";
+import CreditCard from "./components/credit-card/CreditCard";
+import Dice from "./components/dice/Dice";
+import DriverCard from "./components/driver-card/DriverCard";
+import Facebook from "./components/facebook/Facebook";
 import Greetings from "./components/greetings/Greetings";
-import IdCard from "./components/idCard/IdCard";
+import IdCard from "./components/id-card/IdCard";
+import LikeButton from "./components/like-button/LikeButton";
+import NumbersTable from "./components/numbers-table/NumbersTable";
 import Random from "./components/random/Random";
 import Rating from "./components/rating/Rating";
+import RgbColorPicker from "./components/rgb-color-picker/RgbColorPicker";
+import SignupPage from "./components/signup-page/SignupPage";
 
 function App() {
   return (
@@ -65,6 +73,36 @@ function App() {
       <DriverCard name="Dara Khosrowshahi" rating={4.9} img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg" car={{ model: "Audi A3", licensePlate: "BE33ER" }} />
       
       <h2>Iteration 8 | State: LikeButton</h2>
+      <LikeButton colors={["purple", "blue", "green", "yellow", "orange", "red"]} />
+      <LikeButton colors={["purple", "blue", "green", "yellow", "orange", "red"]} />
+
+      <h2>Iteration 9: State: ClickablePicture</h2>
+      <ClickablePicture img="https://randomuser.me/api/portraits/women/44.jpg" imgClicked="../src/assets/images/glasses.png" />
+
+      <h2>Iteration 10 | State: Dice</h2>
+      <Dice />
+
+      <h2>Iteration 11 | State: Carousel</h2>
+      <Carousel images={[
+          "https://randomuser.me/api/portraits/women/1.jpg",
+          "https://randomuser.me/api/portraits/men/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg",
+          "https://randomuser.me/api/portraits/men/2.jpg"
+        ]} 
+      />
+
+      <h2>Iteration 12 | List and Keys | NumbersTable</h2>
+      <NumbersTable limit={24} />
+
+      <h2>Iterations 13 & 14 | List and Keys - FaceBook</h2>
+      <Facebook />
+
+      <h2>Iteration 15 | Form - SignupPage</h2>
+      <SignupPage />
+
+      <h2>Iteration 16 | Lifting State Up - RGBColorPicker</h2>
+      <RgbColorPicker />
+
     </div>
   );
 }
