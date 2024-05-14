@@ -2,10 +2,27 @@ import PropTypes from 'prop-types';
 
 function IdCard (props) {
     const {firstName,lastName,gender,birth,picture,height} = props;
+
+    const divStyle = {
+        height: '200px',
+        border: '1px solid #000',
+        display: 'flex',
+        gap: '35px',
+        margin: '10px'
+      };
+
+      const imgStyle = {
+        padding: '5px'
+    };  
+
+      const innerDivStyle = {
+        textAlign: 'left'
+    };  
+
     return (
-        <div>
-        <img src={picture}></img>
-            <div>
+        <div style={divStyle}>
+        <img src={picture} style={imgStyle}></img>
+            <div style={innerDivStyle}>
             <p>First name: {firstName}</p>
             <p>Last name:{lastName} </p>
             <p>Gender: {gender}</p>

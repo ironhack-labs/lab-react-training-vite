@@ -2,6 +2,11 @@ import PropTypes from 'prop-types';
 
 function Greetings (props) {
     const {lang,children} = props;
+    const divStyle = {
+        border: '1px solid #000',
+        margin: '10px'
+      };
+
     function greet (lang) {
         if(lang==="en") {
             return <span>Hello </span>
@@ -17,7 +22,7 @@ function Greetings (props) {
         }
     }
     return (
-        <div>
+        <div style={divStyle}>
         <p>
             {greet (lang)}
             {children}</p>
