@@ -4,7 +4,8 @@ function Random (props) {
     const {min,max} = props;
     const divStyle = {
         border: '1px solid #000',
-        margin: '10px'
+        margin: '10px',
+        padding: '5px'
       };
 
     function randomNum (min,max){

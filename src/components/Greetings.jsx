@@ -4,7 +4,8 @@ function Greetings (props) {
     const {lang,children} = props;
     const divStyle = {
         border: '1px solid #000',
-        margin: '10px'
+        margin: '10px',
+        padding: '5px'
       };
 
     function greet (lang) {
