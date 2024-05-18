@@ -19,7 +19,7 @@ function Rating (props) {
 }
 
 Rating.propTypes = {
-    children: PropTypes.oneOf(['0','1','2','3','4','5'])
+    children: PropTypes.string
   };
 
 export default Rating;

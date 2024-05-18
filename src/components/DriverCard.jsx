@@ -49,7 +49,7 @@ function DriverCard (props) {
 
 DriverCard.propTypes = {
     name: PropTypes.string,
-    rating: PropTypes.oneOf(['0','1','2','3','4','5']),
+    rating: PropTypes.number,
     img: PropTypes.string,
     car: PropTypes.shape({
         model: PropTypes.string,

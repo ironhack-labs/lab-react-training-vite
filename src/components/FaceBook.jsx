@@ -4,6 +4,8 @@ import { useState } from "react";
 function FaceBook() {
   const [country, setCountry] = useState(false);
    const [personId,setPersonId] = useState([]);
+   const [lisOfP,setlisOfP] = useState(profiles);
+
 
   const divStyle = {
     height: "200px",
@@ -49,6 +51,18 @@ function FaceBook() {
     }
     
   }
+  function sort () {
+    const sortedWords = [...lisOfP].sort((a, b) => a.country.localeCompare(b.country));
+    setlisOfP(sortedWords);
+  }
+
+  function handleSearch(query) {
+    const filteredList = profiles.filter((person)=> {
+        return Object.values(person).join(" ").toLowerCase().includes(query.toLowerCase());
+    })
+    setlisOfP(filteredList);
+  }
+
 
   return (
     <div>
@@ -64,7 +78,9 @@ function FaceBook() {
           </button>
         );
       })}
-      {profiles.map((person) => {
+      <button onClick={sort}>Sort by country</button>
+    <input type="search" id="search" name="search" placeholder="Search..." onChange={(e) => {handleSearch(e.target.value)}}/>
+      {lisOfP.map((person) => {
         return (
           <div
             style={country === person.country ? highlightedDivStyle : divStyle}
