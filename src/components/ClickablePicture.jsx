@@ -16,7 +16,7 @@ function ClickablePicture(props) {
 
     const glassesStyle = {
         width: '150px',
-        position:'relative',
+        position:'absolute',
         top: '75px',
         left: '185px',
         zIndex: '2',
@@ -24,9 +24,9 @@ function ClickablePicture(props) {
     }
 
       return (
-        <div>
+        <div style={{position:'relative'}}>
         <img src={img} style={imgStyle} onClick={toggleImages} />
-        {isClicked && <img style={glassesStyle} src={imgClicked}/>}
+        {isClicked && <img onClick={toggleImages}  style={glassesStyle} src={imgClicked}/>}
         </div>
       );
   }
