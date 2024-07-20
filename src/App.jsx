@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Idcard from "./components/Idcard";
 import Greetings from "./components/Greetings";
 import Random from "./components/Random";
@@ -5,8 +6,39 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
+import LikeButton from "./components/LikeButton";
+import ClickablePicture from "./components/ClickablePicture";
+import Dice from "./components/Dice";
+import Carousel from "./components/Carousel";
+import NumbersTable from "./components/NumbersTable";
+import Facebook from "./components/Facebook";
+import SignUpPage from "./components/SignUpPage";
+import RGBColorPicker from "./components/RGBColorPicker";
 
 function App() {
+  const [likes, setLikes] = useState(0);
+  const [color, setColor] = useState("#800080");
+
+  const changeColor = () => {
+    if (color === "#800080") {
+      setColor("#0000FF");
+    } else if (color === "#0000FF") {
+      setColor("#008000");
+    } else if (color === "#008000") {
+      setColor("#FFFF00");
+    } else if (color === "#FFFF00") {
+      setColor("#FFA500");
+    } else if (color === "#FFA500") {
+      setColor("#FF0000");
+    } else if (color === "#FF0000") {
+      setColor("#800080");
+    }
+  };
+
+  function handleClick() {
+    setLikes(likes + 1);
+    changeColor();
+  }
   return (
     <div className="App">
       <Idcard
@@ -94,6 +126,36 @@ function App() {
           licensePlate: "BE33ER",
         }}
       />
+      <LikeButton
+        likes={likes}
+        setLikes={setLikes}
+        color={color}
+        setColor={setColor}
+        handleClick={handleClick}
+      />
+
+      <ClickablePicture
+        img="src\assets\images\guy.png"
+        imgClicked="src\assets\images\sunglassesguy.png"
+      />
+
+      <Dice />
+
+      <Carousel
+        images={[
+          "https://randomuser.me/api/portraits/women/1.jpg",
+          "https://randomuser.me/api/portraits/men/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg",
+          "https://randomuser.me/api/portraits/men/2.jpg",
+        ]}
+      />
+      <NumbersTable limit={12} />
+
+      <Facebook />
+
+      <SignUpPage />
+
+      <RGBColorPicker />
     </div>
   );
 }
