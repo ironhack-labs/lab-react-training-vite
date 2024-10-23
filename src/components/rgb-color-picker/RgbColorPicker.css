@@ -1,0 +1,32 @@
+.rgb-main-container {
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.single-picker-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.color-picker-container div {
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.color-picker-container {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.color-picker-container span {
+    margin-left: 1rem;
+    font-weight: bold;
+}

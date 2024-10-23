@@ -1,0 +1,33 @@
+.carousel {
+    background-color: whitesmoke;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;   
+}
+
+.carousel img {
+    width: 175px;
+}
+
+.carousel .btns {
+    margin-top: 0.5rem;
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel button {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    min-width: 70px;
+}
+
+.carousel button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.id-card {
+    border: 2px solid red;
+    background-color: rgba(30, 29, 29, 0.986);
+    margin: 0.5rem;
+    display: flex;
+}
+
+.id-card-picture {
+    display: flex;
+}
+
+ .id-card-picture img {
+    object-fit: cover;
+ }
+
+.id-card-body {
+    color: white;
+    text-align: left;
+    margin-left: 0.5rem;
+}

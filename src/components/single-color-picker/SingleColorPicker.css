@@ -1,0 +1,24 @@
+.rgb-picker-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+ 
+}
+
+.rgb-picker-container div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.rgb-picker-container input {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.rgb-picker-container label {
+    margin-left: 1rem;
+}

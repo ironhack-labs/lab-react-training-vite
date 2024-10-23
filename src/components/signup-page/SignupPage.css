@@ -1,0 +1,32 @@
+.div-signup {
+    margin: 0.5rem;
+    border: 1px solid black;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.signup-form label {
+    align-self: start;
+    margin: 0.5rem 0rem;
+}
+
+.signup-form button {
+    margin-top: 1rem;
+    align-self: start;
+    padding: 0.5rem 1rem;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+
+.signup-form input {
+    height: 1.5rem;
+}
+
+.signup-form select {
+    height: 2rem;
+}
