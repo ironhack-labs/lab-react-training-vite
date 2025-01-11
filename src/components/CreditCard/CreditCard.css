@@ -1,0 +1,26 @@
+.card{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    
+    .tipo{
+        display: flex;
+        justify-content: flex-end;
+
+        img{
+            width: 100px;
+        }
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .titular{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
