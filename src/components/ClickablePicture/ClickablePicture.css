@@ -1,0 +1,24 @@
+.container{
+display: block;
+position: relative;
+
+    
+    .switch {
+       
+        position: absolute;
+    top: 48px;
+    left: 623px;
+      
+}
+img{
+    cursor: pointer;
+}
+}
+.on {
+    display: block;
+  }
+  
+  .off {
+    display: none;
+  }
+  
