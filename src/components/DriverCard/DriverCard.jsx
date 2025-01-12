@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './DriverCard.css'
 function DriverCard ({name,rating,img,car}){
     const { model, licensePlate } = car;
