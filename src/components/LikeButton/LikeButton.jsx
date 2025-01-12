@@ -11,6 +11,9 @@ function LikeButton (){
         setLike(like + 1)
         setColor((color + 1) % colors.length);
     }
+    const resetClick = () =>{
+        setLike(0)
+    }
 
 
     return(
@@ -18,6 +21,7 @@ function LikeButton (){
             <button style={{ backgroundColor:colors[color]}} onClick={handleClick}>
                 Like {like}
             </button>
+            <button onClick={resetClick}>reset</button>
         </>
     )
 }

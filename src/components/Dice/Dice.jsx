@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './Dice.css'
 import React, { useState } from 'react';
 import empty from '../../assets/images/dice-empty.png'
