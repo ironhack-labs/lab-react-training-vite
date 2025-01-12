@@ -18,7 +18,7 @@ function FaceBook() {
         <div>
         <div>
             {uniqueCountries.map((country)=>(
-            <button onClick={() => handleClick(country)}key={country}>{country}</button>                
+            <button className={`switch ${isOn === country ? 'color' : '' }`} onClick={() => handleClick(country)}key={country}>{country}</button>                
             ))}
 
 
