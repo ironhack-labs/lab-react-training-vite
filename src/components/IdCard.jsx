@@ -2,7 +2,7 @@
 function IdCard({ lastName, firstName, gender, height, birth, picture }) {
     return (
       <div className="idCard">
-        <img src={picture} alt="Profile" />
+        <img className="imgIdCard" src={picture} alt="Profile" />
         <div>
           <p><strong>First name:</strong> {firstName}</p>
           <p><strong>Last name:</strong> {lastName}</p>

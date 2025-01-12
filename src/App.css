@@ -47,7 +47,7 @@
   border-radius: 8px;
 }
 
-.idCard img {
+.imgIdCard {
   width: 100px;
   height: auto;
   border-radius: 50%;
@@ -100,4 +100,51 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cardType {
+  max-width: 40px;
+  align-self: flex-end;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.textCard {
+  margin-bottom: 1px;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+.lastText {
+  margin-bottom: 30px;
+}
+
+.bankName {
+  margin-left: 40px;
+}
+
+.drivers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.driverCard {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #486fb8;
+  margin: 20px;
+  color: white;
+  border-radius: 8px;
+  img {
+    height: 100px;
+    object-fit: cover;
+  }
+  .driverData {
+    margin-left: 50px;
+    
+  }
 }
