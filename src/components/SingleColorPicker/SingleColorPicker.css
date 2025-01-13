@@ -1,0 +1,7 @@
+.containerColor{
+    display: flex;
+    flex-direction: row;
+    div{
+        width: 100px;
+    }
+}
