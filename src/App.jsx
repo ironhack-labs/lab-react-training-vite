@@ -6,8 +6,31 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
+import LikeButton from "./components/LikeButton";
+import { useState } from "react";
+import ClickablePicture from "./components/ClickablePicture";
+
+
 
 function App() {
+  const [likes, setLikes] = useState(0);
+  const addLikes = () => {
+    setLikes((likes) => likes + 1);
+  };
+  const bgColorOpt = ["purple", "blue", "green", "yellow", "orange", "red"];
+  const [bgColor, setBgColor] = useState(bgColorOpt[0]);
+  const changeBgColor = () => {
+    setBgColor((prevColor) => {
+      const nextIndex = bgColorOpt.indexOf(prevColor) + 1;
+      return bgColorOpt[nextIndex];
+    });
+  };
+  const imgOpt = ["https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e9479d19288123.562d7db2dce3d.jpg", "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7b6da619288123.562d7db32882e.jpg"];
+  const [imgSwitch, setImgSwitch] = useState(true)
+  const changeImg = () => {
+    setImgSwitch((imgSwitch)=>!imgSwitch)
+  }
+
   return (
     <div className="App">
       <h1> LAB | React Training</h1>
@@ -100,6 +123,20 @@ function App() {
             licensePlate: "BE33ER",
           }}
         />
+      </div>
+      <div>
+        <LikeButton
+          likes={likes}
+          bgColor={bgColor}
+          addLikes={addLikes}
+          changeBgColor={changeBgColor}
+        />
+      </div>
+      <div>
+        <ClickablePicture img={imgSwitch?imgOpt[0]:imgOpt[1]} changeImg={changeImg} />
+      </div>
+      <div>
+        <Dice />
       </div>
     </div>
   );
