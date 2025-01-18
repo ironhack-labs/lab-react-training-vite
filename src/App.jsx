@@ -9,6 +9,15 @@ import DriverCard from "./components/DriverCard";
 import LikeButton from "./components/LikeButton";
 import { useState } from "react";
 import ClickablePicture from "./components/ClickablePicture";
+import Dice from "./components/Dice";
+import "../src/assets/images/dice-empty.png"
+import "../src/assets/images/dice1.png"
+import "../src/assets/images/dice2.png"
+import "../src/assets/images/dice3.png"
+import "../src/assets/images/dice4.png"
+import "../src/assets/images/dice5.png"
+import "../src/assets/images/dice6.png"
+
 
 
 
@@ -29,6 +38,12 @@ function App() {
   const [imgSwitch, setImgSwitch] = useState(true)
   const changeImg = () => {
     setImgSwitch((imgSwitch)=>!imgSwitch)
+  }
+
+  const [diceImg, setDiceImg] = useState("../src/assets/images/dice-empty.png")
+  const changeImgDice = () => {
+    const randomNumber = Math.floor(Math.random()*6) + 1;
+      setDiceImg(`../src/assets/images/dice${randomNumber}.png`);
   }
 
   return (
@@ -136,7 +151,7 @@ function App() {
         <ClickablePicture img={imgSwitch?imgOpt[0]:imgOpt[1]} changeImg={changeImg} />
       </div>
       <div>
-        <Dice />
+        <Dice diceImg={diceImg} changeImgDice={changeImgDice}/>
       </div>
     </div>
   );
